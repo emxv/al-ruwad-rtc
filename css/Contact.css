@@ -1,0 +1,233 @@
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+.contact {
+  background: #cccbc9;
+}
+
+.contact .contact-header {
+  padding: 50px 30px 30px 30px;
+  font-size: 50px
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 50px;
+  background-color: #fff;
+  border-radius: 6px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 30px;
+  min-width: 400px;
+  flex-wrap: wrap;
+}
+
+.contact-item:hover {
+  background-color: #242424;
+  color: #fff;
+  box-shadow: 0 5px 20px black;
+  -webkit-filter: drop-shadow(0 5px 10px black);
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+}
+
+.contact-item:hover>h1 {
+  border-bottom: 2px solid #fff;
+  transition: 0.4s;
+}
+
+.white-icon {
+  display: none;
+}
+
+.contact-item:hover .white-icon {
+  display: inline;
+  transition: 0.4s;
+}
+
+.contact-item:hover .dark-icon {
+  display: none;
+  transition: 0.4s;
+}
+
+.contact-item img {
+  width: 25px;
+}
+
+.contact-item a {
+  font-size: 30px;
+  padding-left: 5px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-item h1 {
+  font-size: 40px;
+  border-bottom: 2px solid #242424;
+  margin-bottom: 20px;
+}
+
+.contact-item ul {
+  list-style-type: none;
+}
+
+.contactus-card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+  align-items: flex-start;
+}
+
+.contactus-card h2 {
+  font-size: 35px;
+}
+
+
+.contactus-form {
+  top: 60px;
+  height: auto;
+  width: auto;
+  padding: 50px;
+  z-index: 100;
+  justify-self: flex-end;
+  animation: slideInFromRight 1s ease-in;
+}
+
+.contactus-form .form-control {
+  margin: 30px 0;
+}
+
+.contactus-form input[type='text'],
+.contactus-form input[type='tel'] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 20px;
+
+}
+
+.contactus-form input:focus {
+  outline: none;
+}
+
+.contactus-form .btn {
+  background-color: #242424;
+  color: #fff;
+  font-size: 25px;
+  padding: 15px 50px;
+
+}
+
+.contactus-form .btn:hover {
+  box-shadow: 0 2px 5px black;
+  -webkit-filter: drop-shadow(0 2px 2px #242424);
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border: none;
+  font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .contact .contact-header {
+    padding: 50px 30px 30px 30px;
+    font-size: 35px
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    font-size: 25px;
+    margin: 10px;
+    min-width: 300px;
+    align-self: center;
+    transition: 0.4s;
+  }
+
+  .contact-item ul {
+    position: sticky;
+    max-height: 150px;
+    background-color: #fff;
+    transition: 0.4s;
+    Z-index: 10;
+  }
+
+  .contact-item:hover {
+    box-shadow: 0 5px 20px black;
+    -webkit-filter: drop-shadow(0 5px 10px black);
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    transition: 0.4s;
+  }
+
+  .contact-item:hover ul {
+    background: #242424;
+    transition: 0.4s;
+  }
+
+  .contact-item a {
+    font-size: 25px;
+  }
+
+  .contact-item img {
+    width: 20px;
+  }
+
+  .contactus-card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    margin: 30px;
+    align-items: flex-start;
+  }
+
+  .contactus-card h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .contactus-form {
+    top: 60px;
+    height: auto;
+    width: auto;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+  }
+
+  .contactus-form .btn:hover {
+    background-color: #242422;
+    color: #fff;
+  }
+
+
+
+}

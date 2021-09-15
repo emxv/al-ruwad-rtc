@@ -1,0 +1,170 @@
+.partners {
+  background: #242222;
+}
+
+.space-around {
+  padding-top: 150px;
+}
+
+.border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+}
+
+.border-wrap {
+  border: solid 1px #cccbc9;
+  position: relative;
+  padding: 15px;
+  width: 83%;
+  margin: auto;
+}
+
+.border-wrap>h1 {
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1.154em;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: -45px 0 15px 0;
+  padding-right: 15px;
+}
+
+
+.border-wrap h1 span {
+  padding: 0 5px;
+  background: #242222;
+  display: inline-block;
+}
+
+.border-wrap>h2 {
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+}
+
+.partners-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
+  width: 90%;
+  margin: 0 auto;
+  background: #242222;
+  flex-wrap: wrap;
+}
+
+.partners-wrapper {
+  position: relative;
+  margin: 50px 0 45px;
+}
+
+.partners-items {
+  display: flex;
+  width: 95%;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  Gap: 50px;
+}
+
+.partner-item {
+  display: flex;
+  margin: 3rem;
+  border-radius: 10px;
+
+}
+
+.partner-item>img {
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px grey;
+  -webkit-filter: drop-shadow(0 5px 10px grey);
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+}
+
+.partner-item>img:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+
+
+
+@media only screen and (max-width: 1800px) {
+
+  .partner-item {
+    margin: 2rem 3rem 2rem 3rem
+  }
+
+  .partner-item>img {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+
+  .partners-items {
+    Gap: 70px;
+  }
+
+  .partner-item {
+    margin: 2rem 1rem 2rem 1rem
+  }
+
+  .partner-item>img {
+    max-width: 150px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .border-wrap {
+    border: solid 1px #cccbc9;
+    position: relative;
+    padding: 15px;
+    margin-bottom: 34px;
+    width: 85%;
+    margin: auto;
+  }
+
+  .border-wrap>h1 {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.154em;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: -35px 0 15px 0;
+    padding-right: 15px;
+  }
+
+  .border-wrap>h2 {
+    font-size: 25px;
+    margin: 10px 20px;
+  }
+
+  .partner-item {
+    margin: 2rem 0.5rem 2rem 0.5rem
+  }
+
+  .partners-items {
+    Gap: 20px;
+  }
+
+  .partner-item>img {
+    max-width: 95px;
+  }
+
+  .partner-item>img:hover {
+    transform: scale(1.1);
+  }
+
+
+}

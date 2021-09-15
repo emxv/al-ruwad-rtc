@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Scheherazade', serif;
+    text-decoration: none;
+    list-style: none;
+}
